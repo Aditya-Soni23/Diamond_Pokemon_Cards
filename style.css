@@ -1,0 +1,374 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body style */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #ffcb05;
+    color: #2a75bb;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2a75bb;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #e3350d;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(to right, #2a75bb, #3b4cca);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.prebut {
+    background-color: #2a75bb;
+    height: 35px;
+    width: 150px;
+    text-align: center;
+    border-radius: 6px;
+    color: yellow;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bolder;
+    vertical-align: center;
+}
+
+.prebut:hover {
+    background-color: red;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align to the left */
+    gap: 0.5rem;
+    margin: 2rem 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.filters button {
+    background-color: #2a75bb;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filters button:hover,
+.filters button.active {
+    background-color: #e3350d;
+}
+
+.btn {
+    background-color: #ffcb05;
+    color: #2a75bb;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #f2b807;
+}
+
+/* Card list section */
+.card-list {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.card-item {
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card-item:hover {
+    transform: scale(1.03);
+}
+
+.card-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-item .info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-item p {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-item button {
+    background-color: #2a75bb;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card-item button:hover {
+    background-color: #1b4e91;
+}
+
+/* Footer */
+footer {
+    background-color: #2a75bb;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: #ffcb05;
+    text-decoration: none;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #001660;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+form {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 5vw;
+    width: 800px;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+form h3 {
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+form button {
+    padding: 15px;
+    background: #ff5361;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+@media (max-width: 768px) {
+    form {
+        padding: 8vw;
+    }
+    form input, form textarea {
+        padding: 15px;
+        font-size: 14px;
+    }
+    form button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+.holo{
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    border-radius: 50px;
+}
+#premium-section {
+    padding: 40px;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .premium-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .premium-pack {
+    background: #1c1c1c;
+    border: 2px solid gold;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 10px gold;
+  }
+  
+  .premium-pack-title {
+    font-size: 1.6rem;
+    color: gold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .premium-pack-price {
+    font-size: 1rem;
+    color: #ffd700;
+    font-weight: normal;
+    margin-left: 10px;
+  }
+  
+  
+  .premium-card-list {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .premium-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #2a2a2a;
+    border-radius: 10px;
+    padding: 12px;
+    width: 300px;
+    height: 450px;
+    color: white;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    position: relative;
+  }
+  
+  .premium-card:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 14px gold;
+  }
+  
+  .card-hologram {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    font-size: 0.75rem;
+    color: gold;
+    font-weight: bold;
+  }
+  
+  .card-image {
+    width: 250px;
+    height: 900px;
+    margin: 25px 0 10px 0;
+    border-radius: 6px;
+    border: 2px solid #ccc;
+    object-fit: cover;
+  }
+  
+  .card-name {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .card-rarity {
+    font-size: 0.85rem;
+    color: #ffcc00;
+    opacity: 0.9;
+  }
+  
+  .premium-buy-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .premium-buy-btn:hover {
+    background-color: #d62828;
+  }
+  
